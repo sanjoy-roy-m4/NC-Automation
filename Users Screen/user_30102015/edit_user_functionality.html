@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://dx64live.metafour.com/" />
+<title>edit_user_functionality</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">edit_user_functionality</td></tr>
+</thead><tbody>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[6]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=name</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=mobile</td>
+	<td>${mobile}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=phone</td>
+	<td>${phone}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=profileId</td>
+	<td>label=All menu</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>seratun%123</td>
+	<td>edit_newpass</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${edit_newpass}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>seratun%123</td>
+	<td>edit_conpass</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${edit_conpass}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=newpass</td>
+	<td>${edit_newpass}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=conpass</td>
+	<td>${edit_conpass}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=defaultClient</td>
+	<td>index=1</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costCenterReference1</td>
+	<td>CustorRef</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=permitBookingForOthers1</td>
+	<td>on</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveusersubmitbtn</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input[type=&quot;search&quot;]</td>
+	<td>${user_name}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[10]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

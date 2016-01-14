@@ -1,0 +1,19 @@
+host=http://192.168.0.175
+logPath=D:\NC_Auto\logs\
+online_app=online
+data_app=netcourier-data
+price_code=price02
+price_des=test automation
+type=Sales
+analysis_code=Basic
+brand_unit=Chargeable weight kg
+change_per=Chargeable weight kg
+currency_serach=GBP
+tax_rate=Standard rate
+from_chargeable=4.00
+To_chargeable=5.00
+base_chargeable=6.00
+base_price=7.00
+extra_chargeable=7.00
+extra_price=5.00
+

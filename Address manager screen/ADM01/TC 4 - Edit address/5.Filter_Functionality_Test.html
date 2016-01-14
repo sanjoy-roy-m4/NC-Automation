@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.201/" />
+<title>3C.Job_update_for_previous_week</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">3C.Job_update_for_previous_week</td></tr>
+</thead><tbody>
+<!--Address filter functionality test-->
+<tr>
+	<td>startTest</td>
+	<td>Address filter functionality test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=namefilter</td>
+	<td>${contact01}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=namefilter</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='addresstable']//li//span//span[@class='addressline'][contains(text(),'${contact01}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 3.1, Contact filter functionality, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=namefilter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=companynamefilter</td>
+	<td>Metafour UK Ltd</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=companynamefilter</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='addresstable']//li//span//span[@class='addressline'][contains(text(),'${contact01}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 3.2, Company name filter functionality, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=companynamefilter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressfilter</td>
+	<td>House#12</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=addressfilter</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='addresstable']//li//span//span[@class='addressline'][contains(text(),'House#12')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 3.3, Address filter functionality, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressfilter</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

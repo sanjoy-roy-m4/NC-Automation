@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.175/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${host}/${data_app}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Client Test case 1.4 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Client</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Client Test case 1.5 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='headerbar']/div/div/span</td>
+	<td>Client</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//input[@id='code']/following-sibling::div[@class='help-block']/span[@class='error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//input[@id='name']/following-sibling::div[@class='help-block']/span[@class='error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Client Test case 1.6 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=code</td>
+	<td>${client_code}</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=code</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>${client_name}</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=name</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.headeralert.alert-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Client Test case 1.7 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Client_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${uniqueCode}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<!--code and name check-->
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=updatebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Client Test case 1.8 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=code</td>
+	<td>${client_code}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=name</td>
+	<td>${client_name}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Client Test case 1.9 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.headeralert.alert-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Client Test case 1.10 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Code and Name check</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${uniqueCode}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<!--Test code already exits-->
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Client Test case 1.11 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=code</td>
+	<td>${client_code}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>${client_name}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[2]/span[contains(text(),'Client code already exists')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Client Test case 1.12 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>code already exits</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${uniqueCode}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getReport</td>
+	<td>Client will be added succesfully</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

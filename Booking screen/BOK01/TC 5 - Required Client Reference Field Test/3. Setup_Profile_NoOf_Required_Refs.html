@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.201/" />
+<title>100.Develop</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">100.Develop</td></tr>
+</thead><tbody>
+<tr>
+	<td>startTest</td>
+	<td>Setup Product Profile for Required No. of Client Reference fields Test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=TI-Product-Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 9.2, Client's Product Profile screen appears, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Product Profile screen appears</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<!--Collapse All Sections-->
+<tr>
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--Open Booking Header Section-->
+<tr>
+	<td>click</td>
+	<td>//thead/tr/td[contains(text(),'Booking header section')]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 9.3, Expand Booking header section, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Product Profile screen appears</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_PDID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CLID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CREF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_HAWB</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_QREF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CRF2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_TREF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_BKBY</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_BKDT</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_BKTM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_EMTR</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CRF3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CRF4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=df_RCRF</td>
+	<td>${reqClientRefs}</td>
+</tr>
+<!--Open Booking Header Section-->
+<tr>
+	<td>click</td>
+	<td>//thead/tr/td[contains(text(),'address section')]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_SNBY</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CADR</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CCNT</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_RTIM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_RDAY</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_RCDT</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CTIM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_SNTO</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DADR</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DCNT</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DRDT</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DRTM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_PODR</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DADT</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DATM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CINS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CBLD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CFLR</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CLCN</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DBLD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DFLR</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DLCN</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_SPHN</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_SMOB</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_SEML</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_RPOS</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_RPHN</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_REML</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//thead/tr/td[contains(text(),'weight')]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DVWG</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_TITM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_VMWG</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CWGT</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_TWGT</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//thead/tr/td[contains(text(),'job details')]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CTYP</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CNID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CSVL</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_CSVT</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_IVAL</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DSTN</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_SLID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_PKZF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DDAY</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_DTIM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_PAYR</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_PPST</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_SPID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_NOTE</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=dp_DEF1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=dp_DEF2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=dp_CARD</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_PTYP</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=ed_REXP</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=dp_SLSQ</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=dp_APAF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btnSubmit</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 9.4, Product profile update, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Product Profile screen appears</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

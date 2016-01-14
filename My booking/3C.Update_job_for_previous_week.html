@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.201/" />
+<title>3C.Job_update_for_previous_week</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">3C.Job_update_for_previous_week</td></tr>
+</thead><tbody>
+<!--Job update-->
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='mybookingtable']//li//span//span[contains(text(),'${todayJob}')]//..//..//span[3]//a[@title='Edit job']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=bookingDate</td>
+	<td>${previousWeek}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${previousMonth}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=bookingDate</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=serviceAcknowledge</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=saveconsignment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeLocation</td>
+	<td>jobLocation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${jobLocation}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['jobLocation'].replace('autoprint','')</td>
+	<td>jobConfPage</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=hawb</td>
+	<td>previousWeekJob</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.201/" />
+<title>Test_Client_Field_Option</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_Client_Field_Option</td></tr>
+</thead><tbody>
+<!--Check Showing Delivery Address Section -->
+<tr>
+	<td>assertVisible</td>
+	<td>id=deliveryaddresstabs</td>
+	<td></td>
+</tr>
+<!--Check at Least One Delivery Address Option Appears-->
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='delvaddress']/fieldset/div/div/div/label[1]/input</td>
+	<td></td>
+</tr>
+<!--Check Showing No. of Required Most Popular Addresses-->
+<tr>
+	<td>store</td>
+	<td>deliveryradio${defaultPopularAddress}</td>
+	<td>delAddID</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${delAddID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='delvaddress']/fieldset/div/div/div/label/input[@id='${delAddID}']</td>
+	<td></td>
+</tr>
+<!--Check Not Showing More than No. of Required Most Popular Addresses-->
+<tr>
+	<td>storeEval</td>
+	<td>${defaultPopularAddress}+1</td>
+	<td>invalidIDNo</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>deliveryradio${invalidIDNo}</td>
+	<td>invalidID</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${invalidID}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>//div[@id='delvaddress']/fieldset/div/div/div/label/input[@id='${invalidID}']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='delvaddress']/fieldset/div/div/div/label/input[@id='${delAddID}']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=deliveryaddbutton${defaultPopularAddress}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

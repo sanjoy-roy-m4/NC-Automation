@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.216/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>nahar</td>
+	<td>name</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>MFasia%123</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${password}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>/netcourier-online/user/list</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='listData']/thead/tr/th[6]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//input[@id='name']/following-sibling::div[@class='help-block']/span[@class='error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//input[@id='email']/following-sibling::div[@class='help-block']/span[@class='error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=name</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>nahar@metafour.com</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=email</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=departmentName</td>
+	<td>index=1</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=buildingId</td>
+	<td>index=1</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userName</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=profileId</td>
+	<td>index=2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=permitBookingForOthers1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=newpass</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=conpass</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input[type=&quot;search&quot;]</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[6]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>017789456</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=phone</td>
+	<td>456987</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=floor</td>
+	<td>2nd</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=location</td>
+	<td>Uttara</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=defaultClient</td>
+	<td>index=1</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=labelType</td>
+	<td>index=1</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costCenterReference1</td>
+	<td>ref1</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costCenterReference2</td>
+	<td>ref2</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costCenterReference3</td>
+	<td>ref3</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costCenterReference4</td>
+	<td>ref4</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input[type=&quot;search&quot;]</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>200</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//td[6]/button[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[9]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=access_code</td>
+	<td>SITEST</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=login</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_password</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,16 @@
+host=http://192.168.0.175
+logPath=D:\NC_Auto\logs\
+online_app=online
+data_app=netcourier-data
+product=Express
+from_zone=GB
+to_zone=Du
+priority=1
+client_search=Test client 03
+price_code=price02
+Service=Next day - Next day
+contents=DOCUMENTS
+discount_type=Fixed value
+discount=5
+
+

@@ -1,0 +1,8 @@
+host=http://192.168.0.175
+logPath=D:\NC_Auto\logs\
+client_code=TESTCL03
+online_app=online
+data_app=netcourier-data
+client_name=Test client 03
+email_address=test@test.com
+second_currency=gbp

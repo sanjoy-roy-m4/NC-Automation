@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.175/" />
+<title>client_update</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">client_update</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${host}/${data_app}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Update Client Test case 1.4 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Client</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Update Client Test case 1.5 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='text']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//input[@type='text']</td>
+	<td>${client_code}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//body/ul/li/a[contains(text(),${client_code})]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/ul/li/a[contains(text(),${client_code})]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Update Client Test case 2.1 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=updatebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Update Client Test case 2.2 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=code</td>
+	<td>${client_code}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=name</td>
+	<td>${client_name}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Update Client Test case 2.3 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=invoiceFrequency</td>
+	<td>value=10000584</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=invoiceTemplate</td>
+	<td>value=sky_inv_template.xsl </td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=invoiceEmail</td>
+	<td>${email_address}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=emailTemplate</td>
+	<td>value=icc_inv_email.html</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=second_currency</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=second_currency</td>
+	<td>${second_currency}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//ul[5]/li/a[contains(text(),${second_currency})]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[5]/li/a[contains(text(),${second_currency})]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=second_currency</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=dataExchangeOption1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='dataexchange']/div[2]/div[2]/fieldset/div/label</td>
+	<td>Send tracking:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='dataexchange']/div[2]/div[2]/fieldset/div[2]/label</td>
+	<td>Data format:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='dataexchange']/div[2]/div[2]/fieldset/div[3]/label</td>
+	<td>Email tracking weight:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='dataexchange']/div[2]/div[2]/fieldset/div[4]/label</td>
+	<td>Client data exchange URI/Email:</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.headeralert.alert-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Update Client Test case 2.4 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Client_Update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${uniqueCode}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<!--Update_check-->
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=updatebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Update Client Test case&nbsp;&nbsp;2.5 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=invoiceFrequency</td>
+	<td>value=10000584</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=invoiceTemplate</td>
+	<td>value=sky_inv_template.xsl </td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=invoiceEmail</td>
+	<td>${email_address}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=emailTemplate</td>
+	<td>value=icc_inv_email.html</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=second_currency</td>
+	<td>${second_currency}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=dataExchangeOption1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='dataexchange']/div[2]/div[2]/fieldset/div/label</td>
+	<td>Send tracking:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='dataexchange']/div[2]/div[2]/fieldset/div[2]/label</td>
+	<td>Data format:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='dataexchange']/div[2]/div[2]/fieldset/div[3]/label</td>
+	<td>Email tracking weight:</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//section[@id='dataexchange']/div[2]/div[2]/fieldset/div[4]/label</td>
+	<td>Client data exchange URI/Email:</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.headeralert.alert-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Update Client Test case 2.6 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getReport</td>
+	<td>Client will be updated succesfully</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.175/" />
+<title>booking01</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">booking01</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>online/booking/product/01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=clientId</td>
+	<td>index=2</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sendersearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=sendersearch</td>
+	<td>sanjoy</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientReference</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientSecondReference</td>
+	<td>reference 2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientThirdReference</td>
+	<td>reference 03</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientFourthReference</td>
+	<td>reference 04</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=deliveryradio</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=deliverysearch</td>
+	<td>london</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//ul[@id='ui-id-3']/li/a)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=contentsTypeId</td>
+	<td>label=DOCUMENTS</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=contentsId</td>
+	<td>Papers</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=consignmentValueInCurrency3</td>
+	<td>12</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=totalWeight</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>keyUp</td>
+	<td>id=itemnonull</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=itemnonull</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveandshowbody</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>90000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input[type=&quot;search&quot;]</td>
+	<td>dhl doc</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>20000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='servicestable']/tbody/tr/td[5]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>50000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=labelType</td>
+	<td>label=PDF (Document format)</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=serviceAcknowledge</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveconsignment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>30000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeTitle</td>
+	<td>jobRef</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${jobRef}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>//div[@class='controls']/span[@id='thref']</td>
+	<td>res</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${res}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

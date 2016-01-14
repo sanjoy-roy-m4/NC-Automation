@@ -1,0 +1,17 @@
+hostName,http://ncpg-test1.metafour.lan/
+hostIP,http://192.168.0.175/
+logPath,D:\testLog\
+clientCode01,TESTCLMYB01
+userName,testusmyb01
+password,testusmyb01
+jobForToday,
+jobForThisWeek,
+jobForPreviousWeek,
+jobForThisMonth,
+jobForPreviousMonth,
+jobToArchive,
+jobForCompany,
+jobForAddress,
+jobNo09,
+jobNo010,
+jobNo011,

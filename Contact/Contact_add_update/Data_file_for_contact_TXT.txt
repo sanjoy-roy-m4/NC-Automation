@@ -1,0 +1,23 @@
+host=http://192.168.0.175
+logPath=D:\NC_Auto\logs\
+acess_code=SITEST
+online_app=online
+user_name=seratun
+password=MFasia%123
+username_add=CPUser99
+name_add=User99
+email=demo99@metafour.com
+mobile=3432423342
+phone=2342342323
+floor=2nd floor
+location=Test Location
+your_ref=ref1	
+2nd_ref=ref2
+3rd_ref=ref3
+4th_ref=ref4
+newpass=MFasia%1234
+conpass=MFasia%1234
+newpass_update=test%123
+conpass_update=test%123
+oldpass_update=test%123
+

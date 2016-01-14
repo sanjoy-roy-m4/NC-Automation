@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>17. Address_section_Hide_Profile</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">17. Address_section_Hide_Profile</td></tr>
+</thead><tbody>
+<tr>
+	<td>startTest</td>
+	<td>Setup Hide Profile for Booking section</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=TI-Product-Profile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<!--Collapse All Sections-->
+<tr>
+	<td>deleteAllVisibleCookies</td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td>refreshAndWait</td>
+	<td></td>
+	<td></td>
+</tr>
+<!--Open Address Section-->
+<tr>
+	<td>click</td>
+	<td>//thead/tr/td[contains(text(),'header section')]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Expand Booking header section, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_PDID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_CLID</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_CREF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_HAWB</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_QREF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_CRF2</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_TREF</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_BKBY</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_BKDT</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_BKTM</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_EMTR</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_CRF3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=hd_CRF4</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=btnSubmit</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

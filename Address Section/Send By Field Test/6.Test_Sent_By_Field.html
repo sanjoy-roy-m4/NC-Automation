@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.201/" />
+<title>Test_Client_Field_Option</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_Client_Field_Option</td></tr>
+</thead><tbody>
+<!--Check Client Address at Collection From field-->
+<tr>
+	<td>assertVisible</td>
+	<td>id=clientId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=clientId</td>
+	<td>${clientName01}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.15, Select Test Client 01, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Select Test Client 01</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//input[@id='collectionradio1']/../span[contains(text(),'${clientCompanyName01}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=sendBy</td>
+	<td>${clientMailContact01}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.16, Check Send By field data for Test Client 01, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>id=collectionaddbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=clientId</td>
+	<td>${clientName02}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.17, Selected Test Client 02, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//input[@id='collectionradio1']/../span[contains(text(),'${clientCompanyName02}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=sendBy</td>
+	<td>${clientMailContact02}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.18, Check Send By field data for Test Client 02, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>id=collectionaddbutton</td>
+	<td></td>
+</tr>
+<!--Updating Collection Address-->
+<tr>
+	<td>click</td>
+	<td>id=collectionradio</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=collectionaddsearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=collectionaddsearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=collectionaddsearch</td>
+	<td>${colAddCountryCode01}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='ui-id-2']/li/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=collectionaddbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=collectionaddbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=addressmodal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='company']</td>
+	<td>${colAddCompany01}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='contact']</td>
+	<td>${colAddMailContact01}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@id='closeeditmodalx']/../button[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.19, Update Collection address Contact, Passed</td>
+	<td></td>
+</tr>
+<!--Check Sent by after Updating Collection Address-->
+<tr>
+	<td>assertVisible</td>
+	<td>//input[@id='collectionradio1']/../span[contains(text(),'${colAddCompany01}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=sendBy</td>
+	<td>${colAddMailContact01}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.20, Check Contact name at Send by field, Passed</td>
+	<td></td>
+</tr>
+<!--Update Send By Field Data-->
+<tr>
+	<td>type</td>
+	<td>id=sendBy</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=sendBy</td>
+	<td>${colAddMailContact02}</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=sendBy</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.21, Update Send by field data, Passed</td>
+	<td></td>
+</tr>
+<!--Check  Send By field data after Client Selection Change-->
+<tr>
+	<td>select</td>
+	<td>id=clientId</td>
+	<td>${clientName01}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.22, Select Test Client 01, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=sendBy</td>
+	<td>${colAddMailContact02}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.23, Check Send By field data Unchanged, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=clientId</td>
+	<td>${clientName02}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.24, Select Test Client 01, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=sendBy</td>
+	<td>${colAddMailContact02}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.25, Check Send By field data Unchanged, Passed</td>
+	<td></td>
+</tr>
+<!--Update Collection Address-->
+<tr>
+	<td>click</td>
+	<td>id=collectionradio</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=collectionaddsearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=collectionaddsearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=collectionaddsearch</td>
+	<td>${colAddCountryCode01}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='ui-id-2']/li/a/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=collectionaddbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=collectionaddbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=addressmodal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='company']</td>
+	<td>${colAddCompany02}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='contact']</td>
+	<td>${colAddMailContact03}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@id='closeeditmodalx']/../button[1]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.26, Update Collection addess Contact, Passed</td>
+	<td></td>
+</tr>
+<!--Check Sent by after Updating Collection Address-->
+<tr>
+	<td>assertVisible</td>
+	<td>//input[@id='collectionradio1']/../span[contains(text(),'${colAddCompany02}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=sendBy</td>
+	<td>${colAddMailContact02}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.27, Check Send By field data Unchanged, Passed</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.201/" />
+<title>100.Develop</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">100.Develop</td></tr>
+</thead><tbody>
+<tr>
+	<td>startTest</td>
+	<td>SetUp Clients as Parent Child</td>
+	<td></td>
+</tr>
+<!--Browse NetCourier Data screens-->
+<tr>
+	<td>open</td>
+	<td>${hostIP}/netcourier-data/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.7, Appears NC Data List screens, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>NC Data Login screen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<!--Open Client screen-->
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Client</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.8, Open Client Maintenance screen, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Appears Client Maintenance screen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<!--Search for a Client-->
+<tr>
+	<td>type</td>
+	<td>//input[@type='text']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//input[@type='text']</td>
+	<td>${clientCode01}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//ul[@id='ui-id-1']/li[1]/a[contains(text(),${clientCode01})]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='ui-id-1']/li[1]/a[contains(text(),${clientCode01})]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.9, Search for&nbsp;&nbsp;Test Client 01, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Test Client 01 Maintenance Screen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<!--Update the Client01-->
+<tr>
+	<td>click</td>
+	<td>id=updatebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=code</td>
+	<td>${clientCode01}</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=name</td>
+	<td>clientName01</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=clientgroupparent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=bookinggroupparent</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=clientmakebookings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addresseditmodal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='addressmodal']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>//div[@id='addressmodal']//input[@name='company']</td>
+	<td>clientCompanyName01</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>//div[@id='addressmodal']//input[@name='postcode']</td>
+	<td>clientPostCode01</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>//div[@id='addressmodal']//input[@name='contact']</td>
+	<td>clientMailContact01</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=closeeditmodalx</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.10, Test Client 01 Updated for testing, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Test Client 01 Updated</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<!--Search for Client02-->
+<tr>
+	<td>type</td>
+	<td>//input[@type='text']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//input[@type='text']</td>
+	<td>${clientCode02}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//ul[@id='ui-id-1']/li[1]/a[contains(text(),${clientCode02})]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//ul[@id='ui-id-1']/li[1]/a[contains(text(),${clientCode02})]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.11, Search for Test Client 02, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Test Client 02 Maintenance Screen</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<!--Update the Client02-->
+<tr>
+	<td>click</td>
+	<td>id=updatebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=code</td>
+	<td>${clientCode02}</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>id=name</td>
+	<td>clientName02</td>
+</tr>
+<tr>
+	<td>uncheck</td>
+	<td>id=usebookinggroup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=updatebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=clientmakebookings</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=usebookinggroup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=usebookinggroup</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=usebookinggroupsearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=usebookinggroupsearch</td>
+	<td>${clientCode01}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//ul[@id='ui-id-4']/li[1]/a[contains(text(),${clientCode01})]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='ui-id-4']/li[1]/a[contains(text(),${clientCode01})]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.12, Test Client 01 set Parent Client of Test Client 02, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Set Test Client 01 as parent of Test Client 02</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addresseditmodal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//div[@id='addressmodal']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>//div[@id='addressmodal']//input[@name='company']</td>
+	<td>clientCompanyName02</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>//div[@id='addressmodal']//input[@name='postcode']</td>
+	<td>clientPostCode02</td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>//div[@id='addressmodal']//input[@name='contact']</td>
+	<td>clientMailContact02</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=closeeditmodalx</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>6.13, Test Client 02 Updated for testing, Passed</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

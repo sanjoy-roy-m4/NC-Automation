@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.175/" />
+<title>NC_CP_Logout</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">NC_CP_Logout</td></tr>
+</thead><tbody>
+<tr>
+	<td>startTest</td>
+	<td>NC CP Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${hostName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menudropdown']/ul/li/a[contains(text(),'Logout')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>xpath=(//div//section//form[@id='mainform']//h2[contains(text(),'Login')])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=access_code</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>id=login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>name=j_password</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertElementPresent</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>NC CP Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>5.23, Logout from NC CP, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getReport</td>
+	<td>Collection_Address_Test</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

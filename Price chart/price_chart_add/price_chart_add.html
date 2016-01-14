@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.175/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${host}/${data_app}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Price chart Test case 1.4 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Price chart</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//div[@id='headerbar']/div/div/span</td>
+	<td>Price chart</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Price chart Test case 1.5 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//input[@id='priceChartCode']/following-sibling::div[@class='help-block']/span[@class='error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//input[@id='priceChartDesc']/following-sibling::div[@class='help-block']/span[@class='error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Price chart Test case 2.1 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=priceChartCode</td>
+	<td>${price_code}</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=priceChartCode</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=priceChartDesc</td>
+	<td>${price_des}</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=priceChartDesc</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=priceChartType1</td>
+	<td>${type}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=priceAnalysisCode</td>
+	<td>${analysis_code}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=weightUnit</td>
+	<td>${brand_unit}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=fieldCharge</td>
+	<td>${change_per}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=taxRateCode</td>
+	<td>${tax_rate}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=currency-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=currency-search</td>
+	<td>${currency_serach}</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>GBP - Pound Sterling</td>
+	<td>currency</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=currency-search</td>
+	<td>${currency}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul/li/a[contains(text(),'${currency}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.headeralert.alert-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>link=Pricing Information</td>
+	<td>Pricing Information</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Price chart Test case 2.2 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Price_chart_Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${uniqueCode}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<!--data check-->
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=updatebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Price chart Test case 2.3 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=priceChartCode</td>
+	<td>${price_code}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=priceChartDesc</td>
+	<td>${price_des}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=priceChartType1</td>
+	<td>${type}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=priceAnalysisCode</td>
+	<td>${analysis_code}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=weightUnit</td>
+	<td>${brand_unit}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=fieldCharge</td>
+	<td>${change_per}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=taxRateCode</td>
+	<td>${tax_rate}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Price Test case 2.4 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.headeralert.alert-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Price chartTest case 2.5 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>data check</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${uniqueCode}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<!--Test code already exits-->
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Add</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Price chart Test case 2.6 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=priceChartCode</td>
+	<td>${price_code}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=priceChartDesc</td>
+	<td>${price_des}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[2]/span[contains(text(),' Price chart code already exists')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Price chart Test case 2.7 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>code already exits</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${uniqueCode}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getReport</td>
+	<td>Price chart will be added succesfully</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

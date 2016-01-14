@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base"/>
+<title>m4vars</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">m4vars</td></tr>
+</thead><tbody>
+<tr>
+	<td>storeEval</td>
+	<td>new Array('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')</td>
+	<td>m4Months</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>new Array('Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat')</td>
+	<td>m4Days</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var dat = new Date(), day = storedVars['m4Days'][dat.getDay()] +', '+ dat.getDate(); day + '-' + storedVars['m4Months'][dat.getMonth()] + '-' + dat.getFullYear()}</td>
+	<td>m4Today</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var dat = new Date();dat.setDate(new Date().getDate() + 1);var day = (dat.getDate() &lt; 10 ? &quot;0&quot; : &quot;&quot;) + dat.getDate();day + '-' + storedVars['m4Months'][dat.getMonth()] + '-' + dat.getFullYear()}</td>
+	<td>m4Tomorrow</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var dat = new Date();dat.setDate(new Date().getDate() + 7);var day = (dat.getDate() &lt; 10 ? &quot;0&quot; : &quot;&quot;) + dat.getDate();day + '-' + storedVars['m4Months'][dat.getMonth()] + '-' + dat.getFullYear()}</td>
+	<td>m4SevenDays</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var dat = new Date();dat.setDate(new Date().getDate() + 10);var day = (dat.getDate() &lt; 10 ? &quot;0&quot; : &quot;&quot;) + dat.getDate();day + '-' + storedVars['m4Months'][dat.getMonth()] + '-' + dat.getFullYear()}</td>
+	<td>m4TenDays</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var dat = new Date();dat.setDate(new Date().getDate() + 15);var day = (dat.getDate() &lt; 10 ? &quot;0&quot; : &quot;&quot;) + dat.getDate();day + '-' + storedVars['m4Months'][dat.getMonth()] + '-' + dat.getFullYear()}</td>
+	<td>m4FifteenDays</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var dat = new Date();dat.setMonth(new Date().getMonth() + 1);var day = (dat.getDate() &lt; 10 ? &quot;0&quot; : &quot;&quot;) + dat.getDate();day + '-' + storedVars['m4Months'][dat.getMonth()] + '-' + dat.getFullYear()}</td>
+	<td>m4OneMonth</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var dat = new Date();dat.setMonth(new Date().getMonth() + 3);var day = (dat.getDate() &lt; 10 ? &quot;0&quot; : &quot;&quot;) + dat.getDate();day + '-' + storedVars['m4Months'][dat.getMonth()] + '-' + dat.getFullYear()}</td>
+	<td>m4ThreeMonths</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var dat = new Date();dat.setMonth(new Date().getMonth() + 6);var day = (dat.getDate() &lt; 10 ? &quot;0&quot; : &quot;&quot;) + dat.getDate();day + '-' + storedVars['m4Months'][dat.getMonth()] + '-' + dat.getFullYear()}</td>
+	<td>m4SixMonths</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var dat = new Date();dat.setFullYear(new Date().getFullYear() + 1);var day = (dat.getDate() &lt; 10 ? &quot;0&quot; : &quot;&quot;) + dat.getDate();day + '-' + storedVars['m4Months'][dat.getMonth()] + '-' + dat.getFullYear()}</td>
+	<td>m4OneYear</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var dat = new Date();dat.getDate() + '' + (dat.getMonth() + 1) + '' + dat.getHours() + '' + dat.getMinutes();}</td>
+	<td>m4Unique</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var dat = new Date();dat.getDate() + '' + dat.getHours() + '' + dat.getMinutes();}</td>
+	<td>m4Unique2</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXTZ'; var randomstring = ''; for (var i=0; i&lt;3; i++) { var rnum = Math.floor(Math.random()*chars.length); randomstring += chars.substring(rnum,rnum+1);}}</td>
+	<td>m4randomstring</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>javascript{Math.random().toString(9).substring(2,7)}</td>
+	<td>m4randomnumber</td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,7 @@
+hostName,http://ncpg-test1.metafour.lan/
+hostIP,http://192.168.0.175/
+logPath,D:\testLog\
+clientCode01,TESTCL01
+userName01,testus01
+userPassword01,testus01
+reqClientRefs,3

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.175/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>http://192.168.0.175</td>
+	<td>host</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>online</td>
+	<td>online_app</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>SITEST</td>
+	<td>access_code</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${access_code}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>CPUser99</td>
+	<td>user_name</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${user_name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>User99</td>
+	<td>name</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${name}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>demo99@metafour.com</td>
+	<td>email</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${email}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>MFasia%123</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${password}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>3432423342</td>
+	<td>mobile</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${mobile}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2342342323</td>
+	<td>phone</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${phone}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[7]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>20000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='listData']/thead/tr/th[6]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=name</td>
+	<td>${name}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=email</td>
+	<td>${email}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=mobile</td>
+	<td>${mobile}</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=mobile</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>//input[@id='mobile']/following-sibling::div[@class='help-block']/span[@class='error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=phone</td>
+	<td>${phone}</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=phone</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>//input[@id='phone']/following-sibling::div[@class='help-block']/span[@class='error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=userName</td>
+	<td>${user_name}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=profileId</td>
+	<td>index=2</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=newpass</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=conpass</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>css=input[type=&quot;search&quot;]</td>
+	<td>${user_name}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//li[10]/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<!--login-->
+<tr>
+	<td>open</td>
+	<td>${host}/${online_app}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=access_code</td>
+	<td>${access_code}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=login</td>
+	<td>${user_name}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>500</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=j_password</td>
+	<td>${password}</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//section[@id='changepassword']/div/h4/span</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

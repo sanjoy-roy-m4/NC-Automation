@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.201/" />
+<title>Test_Client_Field_Option</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_Client_Field_Option</td></tr>
+</thead><tbody>
+<tr>
+	<td>startTest</td>
+	<td>Required No. of Client Reference fields Test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=clientId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientReference</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientSecondReference</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientThirdReference</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientFourthReference</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 9.9, Make Client Reference fields as empty, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Make Client Reference fields as empty</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveandshowbody</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>xpath=(//header[@id='overview']/div/span[contains(text(),'Client references value missing or invalid')])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 9.10, Error message for Required Client Reference fields Data , Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Error for Required Client Refernece fields</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientReference</td>
+	<td>123</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=clientReference</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientSecondReference</td>
+	<td>abc</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=clientSecondReference</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveandshowbody</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>xpath=(//header[@id='overview']/div/span[contains(text(),'Client references value missing or invalid')])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 9.11, Error message for Required Client Reference fields Data , Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Error for Required Client Refernece fields</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientFourthReference</td>
+	<td>xyz</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>id=clientFourthReference</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveandshowbody</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>xpath=(//header[@id='overview']/div/span[contains(text(),'Client references value missing or invalid')])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 9.12, No Error message for Required Client Reference fields Data , Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>No Error for Required Client Reference fields</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.201/" />
+<title>Test_Client_Field_Option</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_Client_Field_Option</td></tr>
+</thead><tbody>
+<!--Check Booking screen for Client-->
+<tr>
+	<td>assertVisible</td>
+	<td>id=clientId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>//input[@id='sendersearch']/../../../label/span</td>
+	<td>${bookedByPrompt}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 11.6, Booked by field prompt, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sendersearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=sendersearch</td>
+	<td>${bookedByUser}</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//ul[@id='ui-id-1']/li/a</td>
+	<td>${bookedByUser}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 11.7, Search result for another Contact/User, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='ui-id-1']/li/a</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertValue</td>
+	<td>id=sendersearch</td>
+	<td>${bookedByUser}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 11.8, Contact/User selected by searching, Passed</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

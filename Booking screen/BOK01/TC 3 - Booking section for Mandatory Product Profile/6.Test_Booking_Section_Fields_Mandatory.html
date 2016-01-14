@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:8080/" />
+<title>21. Address_Section_Fields_Mandatory_Check</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">21. Address_Section_Fields_Mandatory_Check</td></tr>
+</thead><tbody>
+<!--Clear Values of Booking section All Input fields-->
+<tr>
+	<td>select</td>
+	<td>id=clientId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=sendersearch</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=senderEmail</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=senderPhone</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=senderMobile</td>
+	<td></td>
+</tr>
+<tr>
+	<td>uncheck</td>
+	<td>id=podNotified</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=hawbNumber</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientReference</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientSecondReference</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientThirdReference</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientFourthReference</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=thirdPartyReference</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveandshowbody</td>
+	<td></td>
+</tr>
+<!--Check for Validation of Booking section Mandatory field-->
+<tr>
+	<td>verifyVisible</td>
+	<td>xpath=(//header[@id='overview']/div[2]/span[contains(text(),'missing')])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=clientId</td>
+	<td>index=2</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveandshowbody</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>xpath=(//header[@id='overview']/div[2]/span[contains(text(),'missing')])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientReference</td>
+	<td>ref 1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientSecondReference</td>
+	<td>ref 2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientThirdReference</td>
+	<td>ref 3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientFourthReference</td>
+	<td>ref 4</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveandshowbody</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>xpath=(//header[@id='overview']/div[2]/span[contains(text(),'missing')])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=thirdPartyReference</td>
+	<td>3rd_Party_Ref</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveandshowbody</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>xpath=(//header[@id='overview']/div[2]/span[contains(text(),'missing')])</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=sendersearch</td>
+	<td>senderName</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=hawbNumber</td>
+	<td>hawb_No_e4rdfder453477</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=deliveryradio1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jobTotalWeight</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=itemnonull</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveandshowbody</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyNotVisible</td>
+	<td>xpath=(//header[@id='overview']/div[2]/span[contains(text(),'missing')])</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

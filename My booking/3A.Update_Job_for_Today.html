@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.201/" />
+<title>3A.Job_booking</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">3A.Job_booking</td></tr>
+</thead><tbody>
+<!--Book a job-->
+<tr>
+	<td>open</td>
+	<td>${hostName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=clientId</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=clientId</td>
+	<td>index=2</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=clientReference</td>
+	<td>cl ref 123</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=deliveryradio1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=deliveryaddbutton1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=addressmodal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeValue</td>
+	<td>//input[@name='company']</td>
+	<td>companyName</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${companyName}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=closeeditmodalx</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=jobTotalWeight</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=jobTotalWeight</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=itemnonull</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=itemnonull</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=serviceAcknowledge</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>id=saveconsignment</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeLocation</td>
+	<td>jobLocation</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${jobLocation}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>storedVars['jobLocation'].replace('autoprint','')</td>
+	<td>jobConfPage</td>
+</tr>
+<tr>
+	<td>storeText</td>
+	<td>id=hawb</td>
+	<td>todayJob</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${todayJob}</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

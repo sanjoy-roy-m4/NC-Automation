@@ -1,0 +1,26 @@
+hostName,http://ncpg-test1.metafour.lan/
+hostIP,http://192.168.0.175/
+logPath,D:\testLog\
+clientCode01,TESTCLREF01
+clientCode02,TESTCLREF02
+clientCode03,TESTCLREF03
+clientCode04,TESTCLREF04
+userName,testus01
+password,testus01
+firstRefPrompt,First Ref test
+secondRefPrompt,Second Ref test
+thirdRefPrompt,Third Ref test
+fourthRefPrompt,Fourth Ref test
+yrListOption01,London
+yrListOption02,Manchester
+srListOption01,Express
+srListOption02,Over Night
+trListOption01,Small
+trListOption02,Medium
+trListOption03,Large
+frListOption01,Blue
+frListOption02,Green
+frListOption03,Yellow
+radioOption01,UK
+radioOption02,US
+radioOption03,UN

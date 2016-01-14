@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.201/" />
+<title>3E.Update_Job_for_PreviousMonth</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">3E.Update_Job_for_PreviousMonth</td></tr>
+</thead><tbody>
+<!--Live and Archive address filter test-->
+<tr>
+	<td>startTest</td>
+	<td>Live and Archive address filter test</td>
+	<td></td>
+</tr>
+<!--Adding address-->
+<tr>
+	<td>click</td>
+	<td>id=addaddressbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=addressmodal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=countryName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=countryName</td>
+	<td>GB</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul//li//a[contains(text(),'GB')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul//li//a[contains(text(),'GB')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=placeName</td>
+	<td>w14 0hn</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button//i[@class='icon-search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul//li//a//div[2][contains(text(),'GB')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul//li//a//div[2][contains(text(),'GB')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='company']</td>
+	<td>M4 BD Ltd</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//input[@name='company']</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=addressLine1</td>
+	<td>House#3</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=addressLine2</td>
+	<td>Saylon</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=addressLine3</td>
+	<td>Town</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=addressLine4</td>
+	<td>London</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='postcode']</td>
+	<td>W14 0HN</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//input[@name='postcode']</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='contact']</td>
+	<td>${contact03}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//input[@name='contact']</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=suppressed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveaddress</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='addresstable']//li//span//span[@class='addressline'][contains(text(),'${contact03}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 6.1, Another new address added, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=showonlyarchived</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='addresstable']//li//span//span[@class='addressline'][contains(text(),'${contact02}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 6.2, Showing archived address, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 6.3, Archived address appears, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=showonlyactive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='addresstable']//li//span//span[@class='addressline'][contains(text(),'${contact03}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 6.4, Showing live address, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 6.5, Newly added address appears, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=showboth</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='addresstable']//li//span//span[@class='addressline'][contains(text(),'${contact03}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 6.6, Showing live address, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='addresstable']//li//span//span[@class='addressline'][contains(text(),'${contact02}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 6.7, Lastly archived address appears, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<!--Archive newly added address-->
+<tr>
+	<td>startTest</td>
+	<td>Archive address functionality test</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='addresstable']//li//span//span[@class='addressline'][contains(text(),'${contact03}')]//..//..//span[3]//button[@title='Delete address']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='addresstable']//li//span//span[@class='addressline'][contains(text(),'${contact03}')]//..//..//span[3]//button[@title='Delete address']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=namefilter</td>
+	<td>${contact03}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=namefilter</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=showonlyactive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertNotVisible</td>
+	<td>//ul[@id='addresstable']//li//span//span[@class='addressline'][contains(text(),'${contact03}')]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

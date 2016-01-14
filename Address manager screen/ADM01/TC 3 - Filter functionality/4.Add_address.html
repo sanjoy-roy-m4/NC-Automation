@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.201/" />
+<title>Test_Client_Field_Option</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_Client_Field_Option</td></tr>
+</thead><tbody>
+<!--Add address test-->
+<tr>
+	<td>startTest</td>
+	<td>Add address</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=addaddressbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=addressmodal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 2.1, Address add modal appears, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=countryName</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=countryName</td>
+	<td>GB</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul//li//a[contains(text(),'GB')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul//li//a[contains(text(),'GB')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveaddress</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=addressmodal</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//input[@name='company']//..//div//span[@class='error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//input[@name='postcode']//..//div//span[@class='error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//input[@name='contact']//..//div//span[@class='error']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 2.2, Address profile validation, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=placeName</td>
+	<td>w14 0hn</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button//i[@class='icon-search']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul//li//a//div[2][contains(text(),'GB')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul//li//a//div[2][contains(text(),'GB')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='company']</td>
+	<td>Metafour UK Ltd</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//input[@name='company']</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=addressLine1</td>
+	<td>House#12</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=addressLine2</td>
+	<td>Park Street</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=addressLine3</td>
+	<td>Town</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=addressLine4</td>
+	<td>London</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='postcode']</td>
+	<td>W14 0HN</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//input[@name='postcode']</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@name='contact']</td>
+	<td>${contact01}</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//input[@name='contact']</td>
+	<td>${KEY_TAB}</td>
+</tr>
+<tr>
+	<td>check</td>
+	<td>id=suppressed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=saveaddress</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 2.3, Data entered to add an address, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='addresstable']//li//span//span[@class='addressline'][contains(text(),'${contact01}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 2.4, Added address appears, Passed</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

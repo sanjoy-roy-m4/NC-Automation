@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://localhost:809/" />
+<title>New Test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">New Test</td></tr>
+</thead><tbody>
+<tr>
+	<td>startTest</td>
+	<td>NC back office login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${hostIP}/boAccess/mafLogin.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>(function() {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var val1 = window.document.getElementsByTagName(&quot;li&quot;)[12].childNodes[1].nodeValue;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var val2 = String(val1.substr(2));&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return val2;&nbsp;&nbsp;&nbsp;}&nbsp;&nbsp;)</td>
+	<td>jsession</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${jsession}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>'${jsession}'</td>
+	<td>jsession</td>
+</tr>
+<tr>
+	<td>open</td>
+	<td>${hostIP}/boAccess/mafScreens.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>(function(urls) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (var idx = 0; idx &lt; urls.length; ++idx) {&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var url = urls[idx].href;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var curl = url.replace('SESSIONID', '${jsession}');&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;urls[idx].href = curl;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;console.log('url = ' + idx + ' = ' + urls[idx].href);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} })(window.document.getElementsByTagName('a'))</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>TC 10.1, NC back office login, Passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>NC back office login</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.175/" />
+<title>client_update</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">client_update</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>${host}/${data_app}/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add route Test case 1.4 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Route</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add route Test case 1.5 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>//input[@type='text']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//input[@type='text']</td>
+	<td>${route_code}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//body/ul/li/a[contains(text(),${route_code})]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//body/ul/li/a[contains(text(),${route_code})]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add route Test case 2.1 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=updatebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add route Test case 2.2 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=routeCode</td>
+	<td>${route_code}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=routeDescription</td>
+	<td>${route_des}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=productId</td>
+	<td>${product}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=validFrom</td>
+	<td>${valid_from}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=validTo</td>
+	<td>${valid_to}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=fromZone</td>
+	<td>${zone}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=toZone</td>
+	<td>${place_01}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=operatesOnMonday1</td>
+	<td>${operatesOnMonday1}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=operatesOnThursday1</td>
+	<td>${operatesOnThursday1}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=priority</td>
+	<td>${priority}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=serviceLevelId</td>
+	<td>${Service}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=contentId</td>
+	<td>${contents}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=cutoffTime</td>
+	<td>${cut_off}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=departureTime</td>
+	<td>${dep_time}</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>id=transitDays</td>
+	<td>${Transit}</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add route Test case 2.3 passed</td>
+	<td></td>
+</tr>
+<!--update-->
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//th[6]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>leg-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>leg-search</td>
+	<td>${leg_code}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//ul[7]/li/a[contains(text(),'${leg}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[7]/li/a[contains(text(),'${leg}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=costs-search</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>id=costs-search</td>
+	<td>${cost_search}</td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>test 29 - test 29</td>
+	<td>test</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//ul[8]/li/a[contains(text(),'${test}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[8]/li/a[contains(text(),'${test}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//table[@id='listRouteLeg']/tfoot/tr/td[6]/button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.headeralert.alert-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>2000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.headeralert.alert-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add route Test case 2.4 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getUniqueCode</td>
+	<td>Client_Update</td>
+	<td></td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${uniqueCode}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>captureEntirePageScreenshot</td>
+	<td>${logPath}${uniqueCode}.png</td>
+	<td></td>
+</tr>
+<!--Update_check-->
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=updatebutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add route Test case 2.5 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=th</td>
+	<td>Leg code</td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//table[@id='listRouteLeg']/tbody/tr/td/div/span[contains(text(),'${leg}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//table[@id='listRouteLeg']/tbody/tr/td[2]/div/span[contains(text(),'${from}')]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyVisible</td>
+	<td>//table[@id='listRouteLeg']/tbody/tr/td[3]/div/span[contains(text(),'${to}')]</td>
+	<td>exact:P:DXB</td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add Leg Test case 2.6 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=headerconfirmbutton</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>css=div.headeralert.alert-success</td>
+	<td></td>
+</tr>
+<tr>
+	<td>logReport</td>
+	<td>Add route Test case 2.7 passed</td>
+	<td></td>
+</tr>
+<tr>
+	<td>getReport</td>
+	<td>Route will be updated succesfully</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

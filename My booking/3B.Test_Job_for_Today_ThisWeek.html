@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://192.168.0.201/" />
+<title>Test_Client_Field_Option</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test_Client_Field_Option</td></tr>
+</thead><tbody>
+<!--Check Booking screen for Client-->
+<tr>
+	<td>open</td>
+	<td>${jobConfPage}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//li[@id='menudropdown']/../li/a[contains(text(),'My booking')]</td>
+	<td></td>
+</tr>
+<!--Check Today jobs-->
+<tr>
+	<td>select</td>
+	<td>id=filterdateperiod</td>
+	<td>Today</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=hawbfilter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=namefilter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressfilter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=showonlyactive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filterJob</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<!--check that job appears-->
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='mybookingtable']//li//span//span[contains(text(),'${todayJob}')]</td>
+	<td></td>
+</tr>
+<!--check Edit job button-->
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='mybookingtable']//li//span//span[contains(text(),'${todayJob}')]//..//..//span[3]//a[@title='Edit job']</td>
+	<td></td>
+</tr>
+<!--check Job tracking button-->
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='mybookingtable']//li//span//span[contains(text(),'${todayJob}')]//..//..//span[3]//button[@title='Tracking details']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//ul[@id='mybookingtable']//li//span//span[contains(text(),'${todayJob}')]//..//..//span[3]//button[@title='Tracking details']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>id=modalcontainer</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=hawb</td>
+	<td>${todayJob}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@class='btn modalclose']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>5000</td>
+	<td></td>
+</tr>
+<!--Check This Week jobs-->
+<tr>
+	<td>select</td>
+	<td>id=filterdateperiod</td>
+	<td>This week</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=hawbfilter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=namefilter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=addressfilter</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=showonlyactive</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=filterJob</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertVisible</td>
+	<td>//ul[@id='mybookingtable']//li//span//span[contains(text(),'${todayJob}')]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
